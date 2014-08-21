@@ -41,8 +41,6 @@ This module is safe to leave in your production code. If your application is dep
 
 This module currently only works with expressjs.
 
-This module only works on OSX machines (for now).
-
 ## License
 
 Licensed under the Apache Public License, v2. 
