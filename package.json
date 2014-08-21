@@ -1,6 +1,6 @@
 {
   "name": "node-acs-proxy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node.ACS local developer proxy",
   "main": "./index",
   "keywords": [
@@ -21,12 +21,15 @@
     "debug": "^1.0.4",
     "express": "^4.8.5",
     "ip": "^0.3.1",
+    "keychain": "0.0.4",
     "prompt": "^0.2.13",
     "request": "^2.40.0",
     "ws": "^0.4.32"
   },
-  "licenses" : [{
-    "type": "Apache",
-    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-  }]
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ]
 }

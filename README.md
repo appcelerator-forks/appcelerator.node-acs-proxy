@@ -21,9 +21,27 @@ var express = require('express'),
 	proxy = require('node-acs-proxy')(app,server);
 ```
 
+When you startup your application locally (either using node or `acs run`), you will get a prompt to login to your Appcelerator account:
+
+```bash
+[REMOTE] Login required to connect to remote server
+username your@login.com
+password
+[REMOTE] Connecting to remote server 3a8fa4eec99ad64084a47dd94e5142321cddd9ec.cloudapp.appcelerator.com
+[REMOTE] App will be available at https://3a8fa4eec99ad64084a47dd94e5142321cddd9ec.cloudapp.appcelerator.com/1029
+```
+
+You can now use this URL to route to your local server on your development machine. Just append your URI path to the provided URL. For example, if you are trying to load the static file `/js/jquery.js`, using the URL example above, the full URL would be `https://3a8fa4eec99ad64084a47dd94e5142321cddd9ec.cloudapp.appcelerator.com/1029/js/jquery.js`.
+
+Subsequent logins will cache your credentials in the OSX keychain.
+
+## Notes
+
 This module is safe to leave in your production code. If your application is deployed in Node.ACS production, it will not be loaded.
 
 This module currently only works with expressjs.
+
+This module only works on OSX machines (for now).
 
 ## License
 
